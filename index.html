@@ -1,0 +1,229 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Amazon Clone
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white p-4 flex items-center justify-between">
+   <div class="flex items-center space-x-4">
+    <i class="fas fa-bars text-xl">
+    </i>
+    <img alt="Amazon logo" class="h-10" src="https://placehold.co/100x40"/>
+   </div>
+   <div class="flex items-center space-x-4">
+    <input class="p-2 rounded w-64" placeholder="Search Amazon.in" type="text"/>
+    <i class="fas fa-search text-xl">
+    </i>
+   </div>
+   <div class="flex items-center space-x-4">
+    
+    <button id="openLogin">Hello, Sign in</button>
+    <div id="loginPopup" class="hidden">
+        <div class="login-form">
+            <h1>Login</h1>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Submit</button>
+                <button type="button" id="closeLogin">Close</button>
+            </form>
+        </div>
+    </div>
+     
+    
+    <i class="fas fa-shopping-cart text-xl">
+    </i>
+   </div>
+  </header>
+  <!-- Main Content -->
+  <main class="p-4">
+   <!-- Banner -->
+   <div class="bg-gradient-to-r from-yellow-200 to-pink-200 p-4 rounded-lg mb-4">
+    <div class="flex items-center justify-between">
+     <div>
+      <h2 class="text-xl font-bold">
+       Starting ₹199
+      </h2>
+      <p>
+       Offers on clothing, footwear &amp; more
+      </p>
+     </div>
+     <img alt="Banner image" class="h-24" src="https://placehold.co/100x100"/>
+    </div>
+   </div>
+   <!-- Categories -->
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+    <!-- Category 1 -->
+    <div class="bg-white p-4 rounded-lg shadow">
+     <h3 class="font-bold mb-2">
+      Appliances for your home | Up to 55% off
+     </h3>
+     <div class="grid grid-cols-2 gap-2">
+      <div>
+       <img alt="Air conditioners" class="h-16" src="https://placehold.co/100x100"/>
+       <p>
+        Air conditioners
+       </p>
+      </div>
+      <div>
+       <img alt="Refrigerators" class="h-16" src="https://placehold.co/100x100"/>
+       <p>
+        Refrigerators
+       </p>
+      </div>
+      <div>
+       <img alt="Microwaves" class="h-16" src="https://placehold.co/100x100"/>
+       <p>
+        Microwaves
+       </p>
+      </div>
+      <div>
+       <img alt="Washing machines" class="h-16" src="https://placehold.co/100x100"/>
+       <p>
+        Washing machines
+       </p>
+      </div>
+     </div>
+     <a class="text-blue-500" href="#">
+      See more
+     </a>
+    </div>
+    <!-- Category 2 -->
+    <div class="bg-white p-4 rounded-lg shadow">
+     <h3 class="font-bold mb-2">
+      Revamp your home in style
+     </h3>
+     <div class="grid grid-cols-2 gap-2">
+      <div>
+       <img alt="Cushion covers, bedsheets &amp; more" class="h-16" src="https://placehold.co/100x100"/>
+       <p>
+        Cushion covers, bedsheets &amp; more
+       </p>
+      </div>
+      <div>
+       <img alt="Figurines, vases &amp; more" class="h-16" src="https://placehold.co/100x100"/>
+       <p>
+        Figurines, vases &amp; more
+       </p>
+      </div>
+      <div>
+       <img alt="Home storage" class="h-16" src="https://placehold.co/100x100"/>
+       <p>
+        Home storage
+       </p>
+      </div>
+      <div>
+       <img alt="Lighting solutions" class="h-16" src="https://placehold.co/100x100"/>
+       <p>
+        Lighting solutions
+       </p>
+      </div>
+     </div>
+     <a class="text-blue-500" href="#">
+      Explore all
+     </a>
+    </div>
+    <!-- Category 3 -->
+    <div class="bg-white p-4 rounded-lg shadow">
+     <h3 class="font-bold mb-2">
+      Starting ₹149 | Headphones
+     </h3>
+     <div class="grid grid-cols-2 gap-2">
+      <div>
+       <img alt="boAt" class="h-16" src="https://placehold.co/100x100"/>
+       <p>
+        Starting ₹249 | boAt
+       </p>
+      </div>
+      <div>
+       <img alt="boult" class="h-16" src="https://placehold.co/100x100"/>
+       <p>
+        Starting ₹349 | boult
+       </p>
+      </div>
+      <div>
+       <img alt="Noise" class="h-16" src="https://placehold.co/100x100"/>
+       <p>
+        Starting ₹649 | Noise
+       </p>
+      </div>
+      <div>
+       <img alt="Zebronics" class="h-16" src="https://placehold.co/100x100"/>
+       <p>
+        Starting ₹149 | Zebronics
+       </p>
+      </div>
+     </div>
+     <a class="text-blue-500" href="#">
+      See all offers
+     </a>
+    </div>
+   </div>
+   <!-- Curated Products -->
+   <div class="bg-white p-4 rounded-lg shadow mb-4">
+    <h3 class="font-bold mb-2">
+     Up to 60% off | Curated kitchen products | Amazon Launchpad
+    </h3>
+    <div class="flex space-x-4 overflow-x-auto">
+     <div class="flex-shrink-0">
+      <img alt="Knife" class="h-24" src="https://placehold.co/100x100"/>
+     </div>
+     <div class="flex-shrink-0">
+      <img alt="Mixer" class="h-24" src="https://placehold.co/100x100"/>
+     </div>
+     <div class="flex-shrink-0">
+      <img alt="Water bottle" class="h-24" src="https://placehold.co/100x100"/>
+     </div>
+     <div class="flex-shrink-0">
+      <img alt="Bag" class="h-24" src="https://placehold.co/100x100"/>
+     </div>
+     <div class="flex-shrink-0">
+      <img alt="Thermos" class="h-24" src="https://placehold.co/100x100"/>
+     </div>
+    </div>
+    <a class="text-blue-500" href="#">
+     See all
+    </a>
+   </div>
+   <!-- Handpicked Products -->
+   <div class="bg-white p-4 rounded-lg shadow">
+    <h3 class="font-bold mb-2">
+     Up to 80% off | Handpicked products from Small businesses
+    </h3>
+    <div class="flex space-x-4 overflow-x-auto">
+     <div class="flex-shrink-0">
+      <img alt="Plants" class="h-24" src="https://placehold.co/100x100"/>
+     </div>
+     <div class="flex-shrink-0">
+      <img alt="Shower curtain" class="h-24" src="https://placehold.co/100x100"/>
+     </div>
+     <div class="flex-shrink-0">
+      <img alt="Hanging plants" class="h-24" src="https://placehold.co/100x100"/>
+     </div>
+     <div class="flex-shrink-0">
+      <img alt="Sofa" class="h-24" src="https://placehold.co/100x100"/>
+     </div>
+     <div class="flex-shrink-0">
+      <img alt="Fan" class="h-24" src="https://placehold.co/100x100"/>
+     </div>
+    </div>
+    <a class="text-blue-500" href="#">
+     See more
+    </a>
+   </div>
+  </main>
+ </body>
+</html>
+
+^X
+
+
